@@ -1,0 +1,1717 @@
+Command: C:\Espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Espressif\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\asus\esp_projects\kmitl_dht_http_fixed\build_py313\kmitl_dht_http.elf C:\Users\asus\esp_projects\kmitl_dht_http_fixed\build_py313\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Espressif\v5.5.1\esp-idf\tools\idf.py' '-B' 'build_py313' '-p' 'COM3'
+00,hd_drv:0x������ST Offset   Length
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 000�ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 17 2025 22:29:04[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2fb1ch (195356) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=0003fb44 vaddr=3ffb0000 size=004d4h (  1236) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a13c4h (660420) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000e13ec vaddr=3ffb04d4 size=03a48h ( 14920) load[0m
+[0;32mI (389) esp_image: segment 4: paddr=000e4e3c vaddr=40080000 size=17eb8h ( 97976) load[0m
+[0;32mI (428) esp_image: segment 5: paddr=000fccfc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (458) cpu_start: Pro cpu start user code[0m
+[0;32mI (458) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (459) app_init: Application information:[0m
+[0;32mI (459) app_init: Project name:     kmitl_dht_http[0m
+[0;32mI (463) app_init: App version:      1[0m
+[0;32mI (466) app_init: Compile time:     Sep 17 2025 22:28:34[0m
+[0;32mI (472) app_init: ELF file SHA256:  16aa00697...[0m
+[0;32mI (476) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (480) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (483) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (487) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (492) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (498) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFB85E0 len 00027A20 (158 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 40097EB8 len 00008148 (32 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (528) spi_flash: flash io: dio[0m
+[0;33mW (531) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (584) wifi:wifi driver task: 3ffc05b0, prio:23, stack:6656, core=0[0m
+[0;32mI (594) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (594) wifi:wifi certification version: v7.0[0m
+[0;32mI (594) wifi:config NVS flash: enabled[0m
+[0;32mI (594) wifi:config nano formatting: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (604) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (604) wifi:Init management short buffer num: 32[0m
+[0;32mI (614) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (624) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (634) wifi_init: accept mbox: 6[0m
+[0;32mI (634) wifi_init: tcpip mbox: 32[0m
+[0;32mI (634) wifi_init: udp mbox: 6[0m
+[0;32mI (644) wifi_init: tcp mbox: 6[0m
+[0;32mI (644) wifi_init: tcp tx win: 5760[0m
+[0;32mI (644) wifi_init: tcp rx win: 5760[0m
+[0;32mI (654) wifi_init: tcp mss: 1440[0m
+[0;32mI (654) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (654) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (664) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (664) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (744) wifi:mode : sta (58:bf:25:8c:14:64)[0m
+[0;32mI (744) wifi:enable tsf[0m
+[0;32mI (3164) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3164) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4434) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4454) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4614) wifi:connected with riize, aid = 1, channel 6, BW20, bssid = 1a:84:68:57:b4:da[0m
+[0;32mI (4614) wifi:security: WPA3-SAE, phy: bgn, rssi: -57[0m
+[0;32mI (4614) wifi:pm start, type: 0[0m
+
+[0;32mI (4614) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4674) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5804) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5804) KMITL_DHT_HTTP: Got IP: 172.20.10.3[0m
+[0;32mI (5804) main_task: Returned from app_main()[0m
+[0;33mW (10824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (10884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (11004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (11064) KMITL_DHT_HTTP: DHT checksum error try=5: got=239 expected=238[0m
+[0;33mW (11124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (11184) KMITL_DHT_HTTP: DHT checksum error try=7: got=241 expected=240[0m
+[0;33mW (11224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (13824) KMITL_DHT_HTTP: DHT checksum error try=1: got=241 expected=240[0m
+[0;33mW (13884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (14004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (14064) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (14064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (14084) wifi:<ba-add>idx:0 (ifx:0, 1a:84:68:57:b4:da), tid:0, ssn:2, winSize:64[0m
+[0;32mI (15344) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (24184) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (24184) KMITL_DHT_HTTP: HTTP POST failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (24214) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (24274) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (24334) KMITL_DHT_HTTP: raw bytes: 56 00 1b 05 76[0m
+[0;32mI (24334) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (25544) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (34384) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (34384) KMITL_DHT_HTTP: HTTP POST failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (34414) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (34474) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (34534) KMITL_DHT_HTTP: raw bytes: 56 00 1b 05 76[0m
+[0;32mI (34534) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (35744) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (38924) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (38964) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (39024) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (39084) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (39144) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (39204) KMITL_DHT_HTTP: DHT checksum error try=5: got=237 expected=236[0m
+[0;33mW (39264) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (39324) KMITL_DHT_HTTP: DHT checksum error try=7: got=239 expected=238[0m
+[0;33mW (39364) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (39384) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (39444) KMITL_DHT_HTTP: DHT checksum error try=2: got=241 expected=240[0m
+[0;33mW (39504) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (39564) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (39564) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (40764) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (41734) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (41764) KMITL_DHT_HTTP: DHT: bit 33 low timeout[0m
+[0;33mW (41824) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (41884) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (41944) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (42004) KMITL_DHT_HTTP: DHT checksum error try=5: got=239 expected=238[0m
+[0;33mW (42064) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (42124) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (42124) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (43344) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (44374) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (44414) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (44474) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (44534) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (44594) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (44654) KMITL_DHT_HTTP: raw bytes: 56 00 1b 06 77[0m
+[0;32mI (44654) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (45874) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (46874) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (46904) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (46964) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (47024) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (47084) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (47144) KMITL_DHT_HTTP: raw bytes: 56 00 1b 06 77[0m
+[0;32mI (47144) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (48354) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (49374) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (49404) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (49464) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49524) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (49584) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49644) KMITL_DHT_HTTP: DHT checksum error try=5: got=239 expected=238[0m
+[0;33mW (49704) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49764) KMITL_DHT_HTTP: DHT checksum error try=7: got=241 expected=240[0m
+[0;33mW (49804) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (49824) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49884) KMITL_DHT_HTTP: DHT checksum error try=2: got=241 expected=240[0m
+[0;33mW (49944) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (50004) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (50004) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (51204) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (52154) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (52184) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (52244) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52304) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (52364) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52424) KMITL_DHT_HTTP: DHT checksum error try=5: got=241 expected=240[0m
+[0;33mW (52484) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52544) KMITL_DHT_HTTP: DHT checksum error try=7: got=241 expected=240[0m
+[0;33mW (52584) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (52604) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (52664) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (52664) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (53864) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (54814) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (54854) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (54914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (54974) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (55034) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55094) KMITL_DHT_HTTP: DHT checksum error try=5: got=241 expected=240[0m
+[0;33mW (55154) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55214) KMITL_DHT_HTTP: DHT checksum error try=7: got=241 expected=240[0m
+[0;33mW (55254) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (55274) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (55334) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (55334) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (56554) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (57574) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (57604) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (57674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (57734) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (57794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (57854) KMITL_DHT_HTTP: DHT checksum error try=5: got=241 expected=240[0m
+[0;33mW (57914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (57974) KMITL_DHT_HTTP: DHT checksum error try=7: got=241 expected=240[0m
+[0;33mW (58014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (58824) KMITL_DHT_HTTP: DHT checksum error try=1: got=241 expected=240[0m
+[0;33mW (58884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (58944) KMITL_DHT_HTTP: raw bytes: 56 00 1b 06 77[0m
+[0;32mI (58944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (60174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (61134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (61824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (61884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (61944) KMITL_DHT_HTTP: raw bytes: 56 00 1b 05 76[0m
+[0;32mI (61944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (63144) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (64164) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (64824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (64884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (65004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (65064) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (65064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (66274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (67334) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (67824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (67884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (67944) KMITL_DHT_HTTP: raw bytes: 56 00 1b 06 77[0m
+[0;32mI (67944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (69164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (70134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (70824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (70894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70954) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (71014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (71074) KMITL_DHT_HTTP: DHT checksum error try=5: got=241 expected=240[0m
+[0;33mW (71134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (71194) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (71194) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (72404) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (73394) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (73824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (73884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73944) KMITL_DHT_HTTP: DHT checksum error try=3: got=239 expected=238[0m
+[0;33mW (74004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (74064) KMITL_DHT_HTTP: raw bytes: 56 00 1b 07 78[0m
+[0;32mI (74064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (75274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (76224) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (76824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (76884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (76944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 00 82[0m
+[0;32mI (76944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (78154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (79114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (79824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (79884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (79944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 11 13[0m
+[0;32mI (79944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (79944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (82824) KMITL_DHT_HTTP: DHT checksum error try=1: got=19 expected=147[0m
+[0;33mW (82884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (82944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 09 0b[0m
+[0;32mI (82944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (82944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (85824) KMITL_DHT_HTTP: DHT checksum error try=1: got=13 expected=141[0m
+[0;33mW (85884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (85944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 00 82[0m
+[0;32mI (85944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (87184) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (88144) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (88824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (88884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (88944) KMITL_DHT_HTTP: raw bytes: 63 00 21 00 84[0m
+[0;32mI (88944) KMITL_DHT_HTTP: DHT OK  T=33.0°C  H=99.0%[0m
+[0;32mI (90154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (91104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (91824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (91884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (91944) KMITL_DHT_HTTP: raw bytes: 63 00 22 05 8a[0m
+[0;32mI (91944) KMITL_DHT_HTTP: DHT OK  T=34.0°C  H=99.0%[0m
+[0;32mI (93164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (94164) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (94824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (94884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (94944) KMITL_DHT_HTTP: raw bytes: c6 00 44 01 0b[0m
+[0;32mI (94944) KMITL_DHT_HTTP: DHT OK  T=68.0°C  H=198.0%[0m
+[0;33mW (94944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=68.0 H=198.0[0m
+[0;33mW (97824) KMITL_DHT_HTTP: DHT checksum error try=1: got=11 expected=139[0m
+[0;33mW (97884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (97944) KMITL_DHT_HTTP: raw bytes: 63 00 22 05 8a[0m
+[0;32mI (97944) KMITL_DHT_HTTP: DHT OK  T=34.0°C  H=99.0%[0m
+[0;32mI (99154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (100104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (100824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (100894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (100954) KMITL_DHT_HTTP: raw bytes: c6 00 44 09 13[0m
+[0;32mI (100954) KMITL_DHT_HTTP: DHT OK  T=68.0°C  H=198.0%[0m
+[0;33mW (100954) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=68.0 H=198.0[0m
+[0;33mW (103824) KMITL_DHT_HTTP: DHT checksum error try=1: got=21 expected=149[0m
+[0;33mW (103884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (103944) KMITL_DHT_HTTP: raw bytes: c6 00 44 05 0f[0m
+[0;32mI (103944) KMITL_DHT_HTTP: DHT OK  T=68.0°C  H=198.0%[0m
+[0;33mW (103944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=68.0 H=198.0[0m
+[0;33mW (106824) KMITL_DHT_HTTP: DHT checksum error try=1: got=15 expected=143[0m
+[0;33mW (106884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (106944) KMITL_DHT_HTTP: raw bytes: 63 00 22 04 89[0m
+[0;32mI (106944) KMITL_DHT_HTTP: DHT OK  T=34.0°C  H=99.0%[0m
+[0;32mI (108174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (109184) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (109824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (109884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (109944) KMITL_DHT_HTTP: raw bytes: c6 00 44 01 0b[0m
+[0;32mI (109944) KMITL_DHT_HTTP: DHT OK  T=68.0°C  H=198.0%[0m
+[0;33mW (109944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=68.0 H=198.0[0m
+[0;33mW (112824) KMITL_DHT_HTTP: DHT checksum error try=1: got=11 expected=139[0m
+[0;33mW (112884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (112944) KMITL_DHT_HTTP: raw bytes: c6 00 42 0b 13[0m
+[0;32mI (112944) KMITL_DHT_HTTP: DHT OK  T=66.0°C  H=198.0%[0m
+[0;33mW (112944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=66.0 H=198.0[0m
+[0;33mW (115824) KMITL_DHT_HTTP: DHT checksum error try=1: got=19 expected=147[0m
+[0;33mW (115884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (115944) KMITL_DHT_HTTP: raw bytes: 63 00 21 01 85[0m
+[0;32mI (115944) KMITL_DHT_HTTP: DHT OK  T=33.0°C  H=99.0%[0m
+[0;32mI (117154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (118124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (118824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (118884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (118944) KMITL_DHT_HTTP: raw bytes: 63 00 20 05 88[0m
+[0;32mI (118944) KMITL_DHT_HTTP: DHT OK  T=32.0°C  H=99.0%[0m
+[0;32mI (120154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (121094) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (121824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (121884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (121944) KMITL_DHT_HTTP: raw bytes: c6 00 40 03 09[0m
+[0;32mI (121944) KMITL_DHT_HTTP: DHT OK  T=64.0°C  H=198.0%[0m
+[0;33mW (121944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=64.0 H=198.0[0m
+[0;33mW (124824) KMITL_DHT_HTTP: DHT checksum error try=1: got=11 expected=139[0m
+[0;33mW (124884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (124944) KMITL_DHT_HTTP: raw bytes: c6 00 40 03 09[0m
+[0;32mI (124944) KMITL_DHT_HTTP: DHT OK  T=64.0°C  H=198.0%[0m
+[0;33mW (124944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=64.0 H=198.0[0m
+[0;33mW (127824) KMITL_DHT_HTTP: DHT checksum error try=1: got=11 expected=139[0m
+[0;33mW (127884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (127944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 09 8b[0m
+[0;32mI (127944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (129154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (130104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (130824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (130884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (130944) KMITL_DHT_HTTP: raw bytes: c6 00 40 11 17[0m
+[0;32mI (130944) KMITL_DHT_HTTP: DHT OK  T=64.0°C  H=198.0%[0m
+[0;33mW (130944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=64.0 H=198.0[0m
+[0;33mW (133824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (133884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (133944) KMITL_DHT_HTTP: raw bytes: c6 00 42 05 0d[0m
+[0;32mI (133944) KMITL_DHT_HTTP: DHT OK  T=66.0°C  H=198.0%[0m
+[0;33mW (133944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=66.0 H=198.0[0m
+[0;33mW (136824) KMITL_DHT_HTTP: DHT checksum error try=1: got=15 expected=143[0m
+[0;33mW (136884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (136944) KMITL_DHT_HTTP: raw bytes: 63 00 20 09 8c[0m
+[0;32mI (136944) KMITL_DHT_HTTP: DHT OK  T=32.0°C  H=99.0%[0m
+[0;32mI (138154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (139104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (139824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (139884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (139944) KMITL_DHT_HTTP: raw bytes: 63 00 20 05 88[0m
+[0;32mI (139944) KMITL_DHT_HTTP: DHT OK  T=32.0°C  H=99.0%[0m
+[0;32mI (141174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (142134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (142824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (142884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (142944) KMITL_DHT_HTTP: raw bytes: c6 00 40 05 0b[0m
+[0;32mI (142944) KMITL_DHT_HTTP: DHT OK  T=64.0°C  H=198.0%[0m
+[0;33mW (142944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=64.0 H=198.0[0m
+[0;33mW (145824) KMITL_DHT_HTTP: DHT checksum error try=1: got=11 expected=139[0m
+[0;33mW (145884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (145944) KMITL_DHT_HTTP: raw bytes: c6 00 40 01 07[0m
+[0;32mI (145944) KMITL_DHT_HTTP: DHT OK  T=64.0°C  H=198.0%[0m
+[0;33mW (145944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=64.0 H=198.0[0m
+[0;33mW (148824) KMITL_DHT_HTTP: DHT checksum error try=1: got=7 expected=135[0m
+[0;33mW (148884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (148944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 09 8b[0m
+[0;32mI (148944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (150174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (151134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (151824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (151894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (151954) KMITL_DHT_HTTP: raw bytes: c6 00 3e 0d 11[0m
+[0;32mI (151954) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (151954) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (154824) KMITL_DHT_HTTP: DHT checksum error try=1: got=19 expected=147[0m
+[0;33mW (154884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (154944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 09 0d[0m
+[0;32mI (154944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (154944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (157824) KMITL_DHT_HTTP: DHT checksum error try=1: got=15 expected=143[0m
+[0;33mW (157884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (157944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 02 84[0m
+[0;32mI (157944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (159154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (160164) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (160824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (160884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (160944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 01 05[0m
+[0;32mI (160944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (160944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (163824) KMITL_DHT_HTTP: DHT checksum error try=1: got=7 expected=135[0m
+[0;33mW (163884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (163944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 11 13[0m
+[0;32mI (163944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (163944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (166824) KMITL_DHT_HTTP: DHT checksum error try=1: got=21 expected=149[0m
+[0;33mW (166884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (166944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 07 88[0m
+[0;32mI (166944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (168154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (169344) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (169824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (169884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (169944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 06 87[0m
+[0;32mI (169944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (171154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (172164) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (172824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (172884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (172944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 0b 0d[0m
+[0;32mI (172944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (172944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (175824) KMITL_DHT_HTTP: DHT checksum error try=1: got=13 expected=141[0m
+[0;33mW (175884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (175944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 07 09[0m
+[0;32mI (175944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (175944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (178824) KMITL_DHT_HTTP: DHT checksum error try=1: got=13 expected=141[0m
+[0;33mW (178884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (178944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 02 83[0m
+[0;32mI (178944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (180164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (181174) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (181824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (181884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (181944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 01 03[0m
+[0;32mI (181944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (181944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (184824) KMITL_DHT_HTTP: DHT checksum error try=1: got=5 expected=133[0m
+[0;33mW (184884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (184944) KMITL_DHT_HTTP: raw bytes: c6 00 3a 13 13[0m
+[0;32mI (184944) KMITL_DHT_HTTP: DHT OK  T=58.0°C  H=198.0%[0m
+[0;33mW (184944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=58.0 H=198.0[0m
+[0;33mW (187824) KMITL_DHT_HTTP: DHT checksum error try=1: got=3 expected=131[0m
+[0;33mW (187884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (187944) KMITL_DHT_HTTP: raw bytes: 63 00 1d 08 88[0m
+[0;32mI (187944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=99.0%[0m
+[0;32mI (189154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (190134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (190824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (190884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (190944) KMITL_DHT_HTTP: raw bytes: 63 00 1d 07 87[0m
+[0;32mI (190944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=99.0%[0m
+[0;32mI (192154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (193104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (193824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (193884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (193944) KMITL_DHT_HTTP: raw bytes: c6 00 3a 0d 0d[0m
+[0;32mI (193944) KMITL_DHT_HTTP: DHT OK  T=58.0°C  H=198.0%[0m
+[0;33mW (193944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=58.0 H=198.0[0m
+[0;33mW (196824) KMITL_DHT_HTTP: DHT checksum error try=1: got=15 expected=143[0m
+[0;33mW (196884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (196944) KMITL_DHT_HTTP: raw bytes: 63 00 1d 05 85[0m
+[0;32mI (196944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=99.0%[0m
+[0;32mI (198154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (199174) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (199824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (199884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (199944) KMITL_DHT_HTTP: raw bytes: 63 00 1d 04 84[0m
+[0;32mI (199944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=99.0%[0m
+[0;32mI (201184) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (202124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (202824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (202884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (202944) KMITL_DHT_HTTP: raw bytes: 63 00 1d 04 84[0m
+[0;32mI (202944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=99.0%[0m
+[0;32mI (204154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (205194) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (205824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (205884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (205944) KMITL_DHT_HTTP: raw bytes: c6 00 3a 07 07[0m
+[0;32mI (205944) KMITL_DHT_HTTP: DHT OK  T=58.0°C  H=198.0%[0m
+[0;33mW (205944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=58.0 H=198.0[0m
+[0;33mW (208824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (208884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (208944) KMITL_DHT_HTTP: raw bytes: 63 00 1d 01 81[0m
+[0;32mI (208944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=99.0%[0m
+[0;32mI (210154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (211124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (211824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (211884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (211944) KMITL_DHT_HTTP: raw bytes: c6 00 38 13 11[0m
+[0;32mI (211944) KMITL_DHT_HTTP: DHT OK  T=56.0°C  H=198.0%[0m
+[0;33mW (211944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=56.0 H=198.0[0m
+[0;33mW (214824) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=129[0m
+[0;33mW (214884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (214944) KMITL_DHT_HTTP: raw bytes: c6 00 38 13 11[0m
+[0;32mI (214944) KMITL_DHT_HTTP: DHT OK  T=56.0°C  H=198.0%[0m
+[0;33mW (214944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=56.0 H=198.0[0m
+[0;33mW (217824) KMITL_DHT_HTTP: DHT checksum error try=1: got=17 expected=145[0m
+[0;33mW (217884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (217944) KMITL_DHT_HTTP: raw bytes: 63 00 1c 08 87[0m
+[0;32mI (217944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=99.0%[0m
+[0;32mI (219144) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (220114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (220824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (220884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (220944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 01 82[0m
+[0;32mI (220944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (222154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (223154) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (223824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (223884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (223944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 07 09[0m
+[0;32mI (223944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (223944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (226824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (226884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (226944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 05 07[0m
+[0;32mI (226944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (226944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (229824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (229884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (229944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 01 82[0m
+[0;32mI (229944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (231244) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (232294) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (232824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (232894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (232954) KMITL_DHT_HTTP: DHT: bit 35 low timeout[0m
+[0;33mW (233014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (233074) KMITL_DHT_HTTP: raw bytes: c6 00 3c 07 09[0m
+[0;32mI (233074) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (233074) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (235824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (235884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (235944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 07 09[0m
+[0;32mI (235944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (235944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (238824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (238884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (238944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 06 87[0m
+[0;32mI (238944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (240144) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (241134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (241824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (241884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (241944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 13 15[0m
+[0;32mI (241944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (241944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (244824) KMITL_DHT_HTTP: DHT checksum error try=1: got=5 expected=133[0m
+[0;33mW (244884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (244944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 03 07[0m
+[0;32mI (244944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (244944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (247824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (247884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (247944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 03 85[0m
+[0;32mI (247944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (249154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (250144) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (250824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (250884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (250944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 05 87[0m
+[0;32mI (250944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (252154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (253124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (253824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (253884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (253944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 13 17[0m
+[0;32mI (253944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (253944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (256824) KMITL_DHT_HTTP: DHT checksum error try=1: got=23 expected=151[0m
+[0;33mW (256884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (256944) KMITL_DHT_HTTP: raw bytes: c6 00 40 03 09[0m
+[0;32mI (256944) KMITL_DHT_HTTP: DHT OK  T=64.0°C  H=198.0%[0m
+[0;33mW (256944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=64.0 H=198.0[0m
+[0;33mW (259824) KMITL_DHT_HTTP: DHT checksum error try=1: got=11 expected=139[0m
+[0;33mW (259884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (259944) KMITL_DHT_HTTP: raw bytes: 63 00 20 00 83[0m
+[0;32mI (259944) KMITL_DHT_HTTP: DHT OK  T=32.0°C  H=99.0%[0m
+[0;32mI (261154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (262114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (262824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (262884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (262944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 13 17[0m
+[0;32mI (262944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (262944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (265824) KMITL_DHT_HTTP: DHT checksum error try=1: got=7 expected=135[0m
+[0;33mW (265884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (265944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 0d 11[0m
+[0;32mI (265944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (265944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (268824) KMITL_DHT_HTTP: DHT checksum error try=1: got=19 expected=147[0m
+[0;33mW (268884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (268944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 05 87[0m
+[0;32mI (268944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (270154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (271104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (271824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (271884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (271944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 04 86[0m
+[0;32mI (271944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (273164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (274174) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (274824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (274884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (274944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 07 0b[0m
+[0;32mI (274944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (274944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (277824) KMITL_DHT_HTTP: DHT checksum error try=1: got=13 expected=141[0m
+[0;33mW (277884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (277944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 05 09[0m
+[0;32mI (277944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (277944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (280824) KMITL_DHT_HTTP: DHT checksum error try=1: got=11 expected=139[0m
+[0;33mW (280884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (280944) KMITL_DHT_HTTP: raw bytes: 63 00 1f 01 83[0m
+[0;32mI (280944) KMITL_DHT_HTTP: DHT OK  T=31.0°C  H=99.0%[0m
+[0;32mI (282154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (283124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (283824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (283884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (283944) KMITL_DHT_HTTP: raw bytes: c6 00 3e 01 05[0m
+[0;32mI (283944) KMITL_DHT_HTTP: DHT OK  T=62.0°C  H=198.0%[0m
+[0;33mW (283944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=62.0 H=198.0[0m
+[0;33mW (286824) KMITL_DHT_HTTP: DHT checksum error try=1: got=5 expected=133[0m
+[0;33mW (286884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (286944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 13 15[0m
+[0;32mI (286944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (286944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (289824) KMITL_DHT_HTTP: DHT checksum error try=1: got=21 expected=149[0m
+[0;33mW (289884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (289944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 08 89[0m
+[0;32mI (289944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (291154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (292124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (292824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (292884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (292944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 0f 11[0m
+[0;32mI (292944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (292944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (295824) KMITL_DHT_HTTP: DHT checksum error try=1: got=17 expected=145[0m
+[0;33mW (295884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (295944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 0b 0d[0m
+[0;32mI (295944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (295944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (298824) KMITL_DHT_HTTP: DHT checksum error try=1: got=15 expected=143[0m
+[0;33mW (298884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (298944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 05 86[0m
+[0;32mI (298944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (300164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (301134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (301824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (301884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (301944) KMITL_DHT_HTTP: raw bytes: 63 00 1e 03 84[0m
+[0;32mI (301944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=99.0%[0m
+[0;32mI (303164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (304134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (304824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (304884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (304944) KMITL_DHT_HTTP: raw bytes: c6 00 3c 07 09[0m
+[0;32mI (304944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=198.0%[0m
+[0;33mW (304944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=198.0[0m
+[0;33mW (307824) KMITL_DHT_HTTP: DHT checksum error try=1: got=9 expected=137[0m
+[0;33mW (307884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (307944) KMITL_DHT_HTTP: raw bytes: c4 00 3c 03 03[0m
+[0;32mI (307944) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=196.0%[0m
+[0;33mW (307944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=196.0[0m
+[0;33mW (310824) KMITL_DHT_HTTP: DHT checksum error try=1: got=5 expected=133[0m
+[0;33mW (310884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (310944) KMITL_DHT_HTTP: raw bytes: 62 00 1e 00 80[0m
+[0;32mI (310944) KMITL_DHT_HTTP: DHT OK  T=30.0°C  H=98.0%[0m
+[0;32mI (312164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (313134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (313824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (313884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (313944) KMITL_DHT_HTTP: DHT checksum error try=3: got=255 expected=254[0m
+[0;33mW (314004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (314064) KMITL_DHT_HTTP: DHT checksum error try=5: got=255 expected=254[0m
+[0;33mW (314124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (314184) KMITL_DHT_HTTP: raw bytes: c2 00 3c 03 01[0m
+[0;32mI (314184) KMITL_DHT_HTTP: DHT OK  T=60.0°C  H=194.0%[0m
+[0;33mW (314184) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=60.0 H=194.0[0m
+[0;33mW (316824) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=129[0m
+[0;33mW (316884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (316944) KMITL_DHT_HTTP: raw bytes: c2 00 3a 13 0f[0m
+[0;32mI (316944) KMITL_DHT_HTTP: DHT OK  T=58.0°C  H=194.0%[0m
+[0;33mW (316944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=58.0 H=194.0[0m
+[0;33mW (319824) KMITL_DHT_HTTP: DHT checksum error try=1: got=255 expected=126[0m
+[0;33mW (319884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (319944) KMITL_DHT_HTTP: raw bytes: 61 00 1d 09 87[0m
+[0;32mI (319944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=97.0%[0m
+[0;32mI (321184) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (322194) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (322824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (322884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (322944) KMITL_DHT_HTTP: raw bytes: be 00 3a 0f 07[0m
+[0;32mI (322944) KMITL_DHT_HTTP: DHT OK  T=58.0°C  H=190.0%[0m
+[0;33mW (322944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=58.0 H=190.0[0m
+[0;33mW (325824) KMITL_DHT_HTTP: DHT checksum error try=1: got=7 expected=135[0m
+[0;33mW (325884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (325944) KMITL_DHT_HTTP: raw bytes: bc 00 3a 0d 03[0m
+[0;32mI (325944) KMITL_DHT_HTTP: DHT OK  T=58.0°C  H=188.0%[0m
+[0;33mW (325944) KMITL_DHT_HTTP: Skip HTTP: invalid reading T=58.0 H=188.0[0m
+[0;33mW (328824) KMITL_DHT_HTTP: DHT checksum error try=1: got=3 expected=131[0m
+[0;33mW (328884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (328944) KMITL_DHT_HTTP: raw bytes: 5c 00 1d 05 7e[0m
+[0;32mI (328944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=92.0%[0m
+[0;32mI (330154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (331154) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (331824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (331884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (331944) KMITL_DHT_HTTP: raw bytes: 5b 00 1d 05 7d[0m
+[0;32mI (331944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=91.0%[0m
+[0;32mI (333154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (334104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (334824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (334884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (334944) KMITL_DHT_HTTP: DHT checksum error try=3: got=247 expected=246[0m
+[0;33mW (335004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (335064) KMITL_DHT_HTTP: DHT checksum error try=5: got=249 expected=248[0m
+[0;33mW (335124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (335184) KMITL_DHT_HTTP: DHT checksum error try=7: got=249 expected=248[0m
+[0;33mW (335224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (337824) KMITL_DHT_HTTP: DHT checksum error try=1: got=249 expected=248[0m
+[0;33mW (337884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (337944) KMITL_DHT_HTTP: DHT checksum error try=3: got=247 expected=246[0m
+[0;33mW (338004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (338064) KMITL_DHT_HTTP: raw bytes: 5a 00 1d 04 7b[0m
+[0;32mI (338064) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=90.0%[0m
+[0;32mI (339284) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (340234) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (340824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (340884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (340944) KMITL_DHT_HTTP: raw bytes: 59 00 1d 03 79[0m
+[0;32mI (340944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=89.0%[0m
+[0;32mI (342164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (343224) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (343824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (343884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (343944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (344004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (344064) KMITL_DHT_HTTP: DHT checksum error try=5: got=243 expected=242[0m
+[0;33mW (344124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (344184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (344224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (346824) KMITL_DHT_HTTP: DHT checksum error try=1: got=245 expected=244[0m
+[0;33mW (346884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (346944) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=240[0m
+[0;33mW (347004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (347064) KMITL_DHT_HTTP: DHT checksum error try=5: got=241 expected=240[0m
+[0;33mW (347124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (347184) KMITL_DHT_HTTP: raw bytes: 58 00 1d 03 78[0m
+[0;32mI (347184) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=88.0%[0m
+[0;32mI (348404) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (349384) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (349824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (349884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (349944) KMITL_DHT_HTTP: raw bytes: 57 00 1d 02 76[0m
+[0;32mI (349944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=87.0%[0m
+[0;32mI (351174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (352154) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (352824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (352884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (352944) KMITL_DHT_HTTP: raw bytes: 55 00 1d 01 73[0m
+[0;32mI (352944) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=85.0%[0m
+[0;32mI (354154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (355104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (355824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (355884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (355944) KMITL_DHT_HTTP: DHT checksum error try=3: got=227 expected=226[0m
+[0;33mW (356004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (356064) KMITL_DHT_HTTP: DHT checksum error try=5: got=229 expected=228[0m
+[0;33mW (356124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (356184) KMITL_DHT_HTTP: raw bytes: 54 00 1d 01 72[0m
+[0;32mI (356184) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=84.0%[0m
+[0;32mI (357404) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (358374) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (358824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (358884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (358944) KMITL_DHT_HTTP: DHT checksum error try=3: got=227 expected=226[0m
+[0;33mW (359004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (359064) KMITL_DHT_HTTP: raw bytes: 54 00 1d 01 72[0m
+[0;32mI (359064) KMITL_DHT_HTTP: DHT OK  T=29.0°C  H=84.0%[0m
+[0;32mI (360314) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (361284) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (361824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (361884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (361944) KMITL_DHT_HTTP: raw bytes: 55 00 1c 09 7a[0m
+[0;32mI (361944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (363154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (364094) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (364824) KMITL_DHT_HTTP: DHT: bit 33 low timeout[0m
+[0;33mW (364884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (364944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (365004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (365064) KMITL_DHT_HTTP: DHT checksum error try=5: got=229 expected=228[0m
+[0;33mW (365124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (365184) KMITL_DHT_HTTP: DHT checksum error try=7: got=229 expected=228[0m
+[0;33mW (365224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (367824) KMITL_DHT_HTTP: DHT checksum error try=1: got=229 expected=228[0m
+[0;33mW (367884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (367944) KMITL_DHT_HTTP: raw bytes: 56 00 1c 09 7b[0m
+[0;32mI (367944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (369154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (370114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (370824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (370884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (370944) KMITL_DHT_HTTP: raw bytes: 56 00 1c 09 7b[0m
+[0;32mI (370944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (372144) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (373104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (373824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (373884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (373944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (374004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (374064) KMITL_DHT_HTTP: raw bytes: 56 00 1c 09 7b[0m
+[0;32mI (374064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (375274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (376224) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (376824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (376884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (376944) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=240[0m
+[0;33mW (377004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (377064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (377124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (377184) KMITL_DHT_HTTP: raw bytes: 55 00 1c 09 7a[0m
+[0;32mI (377184) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (378394) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (379454) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (379824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (379884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (379944) KMITL_DHT_HTTP: raw bytes: 55 00 1c 07 78[0m
+[0;32mI (379944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (381154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (382114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (382824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (382884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (382944) KMITL_DHT_HTTP: raw bytes: 54 00 1c 06 76[0m
+[0;32mI (382944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=84.0%[0m
+[0;32mI (384154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (385114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (385824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (385884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (385944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (386004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (386064) KMITL_DHT_HTTP: DHT checksum error try=5: got=237 expected=236[0m
+[0;33mW (386124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (386184) KMITL_DHT_HTTP: DHT checksum error try=7: got=239 expected=238[0m
+[0;33mW (386224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (388824) KMITL_DHT_HTTP: DHT checksum error try=1: got=239 expected=238[0m
+[0;33mW (388884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (388944) KMITL_DHT_HTTP: DHT checksum error try=3: got=235 expected=234[0m
+[0;33mW (389004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (389064) KMITL_DHT_HTTP: raw bytes: 55 00 1c 06 77[0m
+[0;32mI (389064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (390274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (391314) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (391824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (391884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (391944) KMITL_DHT_HTTP: raw bytes: 55 00 1c 05 76[0m
+[0;32mI (391944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (393174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (394154) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (394824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (394894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (394954) KMITL_DHT_HTTP: DHT: bit 32 low timeout[0m
+[0;33mW (395014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (395074) KMITL_DHT_HTTP: DHT checksum error try=5: got=237 expected=236[0m
+[0;33mW (395134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (395194) KMITL_DHT_HTTP: DHT checksum error try=7: got=239 expected=238[0m
+[0;33mW (395234) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (397824) KMITL_DHT_HTTP: DHT checksum error try=1: got=239 expected=238[0m
+[0;33mW (397884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (397944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (398004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (398064) KMITL_DHT_HTTP: raw bytes: 55 00 1c 05 76[0m
+[0;32mI (398064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (399274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (400464) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (400824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (400884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (400944) KMITL_DHT_HTTP: raw bytes: 56 00 1c 05 77[0m
+[0;32mI (400944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (402164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (403134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (403824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (403884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (403944) KMITL_DHT_HTTP: DHT checksum error try=3: got=239 expected=238[0m
+[0;33mW (404004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (404064) KMITL_DHT_HTTP: DHT checksum error try=5: got=239 expected=238[0m
+[0;33mW (404124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (404184) KMITL_DHT_HTTP: DHT checksum error try=7: got=239 expected=238[0m
+[0;33mW (404224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (406824) KMITL_DHT_HTTP: DHT checksum error try=1: got=239 expected=238[0m
+[0;33mW (406884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (406944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (407004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (407064) KMITL_DHT_HTTP: DHT checksum error try=5: got=239 expected=238[0m
+[0;33mW (407124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (407184) KMITL_DHT_HTTP: raw bytes: 56 00 1c 05 77[0m
+[0;32mI (407184) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (408394) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (409384) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (409824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (409884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (409944) KMITL_DHT_HTTP: raw bytes: 55 00 1c 03 74[0m
+[0;32mI (409944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (411154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (412104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (412824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (412884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (412944) KMITL_DHT_HTTP: raw bytes: 55 00 1c 03 74[0m
+[0;32mI (412944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=85.0%[0m
+[0;32mI (414164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (415134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (415824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (415884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (415944) KMITL_DHT_HTTP: DHT checksum error try=3: got=235 expected=234[0m
+[0;33mW (416004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (416064) KMITL_DHT_HTTP: DHT checksum error try=5: got=237 expected=236[0m
+[0;33mW (416124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (416184) KMITL_DHT_HTTP: DHT checksum error try=7: got=237 expected=236[0m
+[0;33mW (416224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (418824) KMITL_DHT_HTTP: DHT checksum error try=1: got=239 expected=238[0m
+[0;33mW (418884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (418944) KMITL_DHT_HTTP: DHT checksum error try=3: got=235 expected=234[0m
+[0;33mW (419004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (419064) KMITL_DHT_HTTP: raw bytes: 56 00 1c 03 75[0m
+[0;32mI (419064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (420324) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (421304) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (421824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (421884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (421944) KMITL_DHT_HTTP: raw bytes: 57 00 1c 03 76[0m
+[0;32mI (421944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (423154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (424184) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (424824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (424884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (424944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (425004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (425064) KMITL_DHT_HTTP: DHT checksum error try=5: got=237 expected=236[0m
+[0;33mW (425124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (425184) KMITL_DHT_HTTP: DHT checksum error try=7: got=237 expected=236[0m
+[0;33mW (425224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (427824) KMITL_DHT_HTTP: DHT checksum error try=1: got=239 expected=238[0m
+[0;33mW (427884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (427944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (428004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (428064) KMITL_DHT_HTTP: DHT checksum error try=5: got=237 expected=236[0m
+[0;33mW (428124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (428184) KMITL_DHT_HTTP: raw bytes: 57 00 1c 03 76[0m
+[0;32mI (428184) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (429394) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (430344) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (430824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (430884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (430944) KMITL_DHT_HTTP: raw bytes: 58 00 1c 03 77[0m
+[0;32mI (430944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=88.0%[0m
+[0;32mI (432154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (433124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (433824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (433884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (433944) KMITL_DHT_HTTP: raw bytes: 58 00 1c 03 77[0m
+[0;32mI (433944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=88.0%[0m
+[0;32mI (435164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (436124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (436824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (436884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (436944) KMITL_DHT_HTTP: DHT checksum error try=3: got=237 expected=236[0m
+[0;33mW (437004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (437064) KMITL_DHT_HTTP: DHT checksum error try=5: got=239 expected=238[0m
+[0;33mW (437124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (437184) KMITL_DHT_HTTP: raw bytes: 58 00 1c 03 77[0m
+[0;32mI (437184) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=88.0%[0m
+[0;32mI (438394) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (439384) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (439824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (439884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (439944) KMITL_DHT_HTTP: DHT checksum error try=3: got=235 expected=234[0m
+[0;33mW (440004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (440064) KMITL_DHT_HTTP: raw bytes: 57 00 1c 03 76[0m
+[0;32mI (440064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (441274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (442224) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (442824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (442884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (442944) KMITL_DHT_HTTP: raw bytes: 57 00 1c 01 74[0m
+[0;32mI (442944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (444164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (445104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (445824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (445894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (445954) KMITL_DHT_HTTP: DHT checksum error try=3: got=233 expected=232[0m
+[0;33mW (446014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (446074) KMITL_DHT_HTTP: DHT checksum error try=5: got=235 expected=234[0m
+[0;33mW (446134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (446194) KMITL_DHT_HTTP: raw bytes: 57 00 1c 03 76[0m
+[0;32mI (446194) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (447444) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (448424) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (448824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (448884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (448944) KMITL_DHT_HTTP: DHT checksum error try=3: got=233 expected=232[0m
+[0;33mW (449004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (449064) KMITL_DHT_HTTP: raw bytes: 57 00 1c 02 75[0m
+[0;32mI (449064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (450284) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (451234) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (451824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (451884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (451944) KMITL_DHT_HTTP: raw bytes: 57 00 1c 01 74[0m
+[0;32mI (451944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (453174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (454154) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (454824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (454884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (454944) KMITL_DHT_HTTP: DHT checksum error try=3: got=233 expected=232[0m
+[0;33mW (455004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (455064) KMITL_DHT_HTTP: DHT checksum error try=5: got=235 expected=234[0m
+[0;33mW (455124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (455184) KMITL_DHT_HTTP: DHT checksum error try=7: got=237 expected=236[0m
+[0;33mW (455224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (457824) KMITL_DHT_HTTP: DHT checksum error try=1: got=237 expected=236[0m
+[0;33mW (457884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (457944) KMITL_DHT_HTTP: DHT checksum error try=3: got=233 expected=232[0m
+[0;33mW (458004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (458064) KMITL_DHT_HTTP: raw bytes: 57 00 1c 02 75[0m
+[0;32mI (458064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (459284) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (460284) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (460824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (460884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (460944) KMITL_DHT_HTTP: raw bytes: 57 00 1c 01 74[0m
+[0;32mI (460944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (462174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (463124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (463824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (463884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (463944) KMITL_DHT_HTTP: raw bytes: 58 00 1c 01 75[0m
+[0;32mI (463944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=88.0%[0m
+[0;32mI (465194) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (466344) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (466824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (466884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (466944) KMITL_DHT_HTTP: DHT checksum error try=3: got=233 expected=232[0m
+[0;33mW (467004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (467064) KMITL_DHT_HTTP: DHT checksum error try=5: got=233 expected=232[0m
+[0;33mW (467124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (467184) KMITL_DHT_HTTP: DHT checksum error try=7: got=233 expected=232[0m
+[0;33mW (467224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (469824) KMITL_DHT_HTTP: DHT checksum error try=1: got=235 expected=234[0m
+[0;33mW (469884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (469944) KMITL_DHT_HTTP: DHT checksum error try=3: got=231 expected=230[0m
+[0;33mW (470004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (470064) KMITL_DHT_HTTP: raw bytes: 56 00 1c 01 73[0m
+[0;32mI (470064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (471294) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (472254) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (472824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (472884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (472944) KMITL_DHT_HTTP: raw bytes: 56 00 1c 00 72[0m
+[0;32mI (472944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (474154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (475104) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (475824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (475894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (475954) KMITL_DHT_HTTP: DHT: bit 36 low timeout[0m
+[0;33mW (476014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (476074) KMITL_DHT_HTTP: DHT checksum error try=5: got=231 expected=230[0m
+[0;33mW (476134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (476194) KMITL_DHT_HTTP: DHT checksum error try=7: got=231 expected=230[0m
+[0;33mW (476234) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (478824) KMITL_DHT_HTTP: DHT checksum error try=1: got=231 expected=230[0m
+[0;33mW (478884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (478944) KMITL_DHT_HTTP: DHT checksum error try=3: got=229 expected=228[0m
+[0;33mW (479004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (479064) KMITL_DHT_HTTP: raw bytes: 56 00 1c 01 73[0m
+[0;32mI (479064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (480264) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (481244) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (481824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (481884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (481944) KMITL_DHT_HTTP: raw bytes: 57 00 1c 00 73[0m
+[0;32mI (481944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (483154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (484204) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (484824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (484884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (484944) KMITL_DHT_HTTP: DHT checksum error try=3: got=231 expected=230[0m
+[0;33mW (485004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (485064) KMITL_DHT_HTTP: DHT checksum error try=5: got=233 expected=232[0m
+[0;33mW (485124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (485184) KMITL_DHT_HTTP: DHT checksum error try=7: got=233 expected=232[0m
+[0;33mW (485224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (487824) KMITL_DHT_HTTP: DHT checksum error try=1: got=233 expected=232[0m
+[0;33mW (487884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (487944) KMITL_DHT_HTTP: DHT checksum error try=3: got=231 expected=230[0m
+[0;33mW (488004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (488064) KMITL_DHT_HTTP: raw bytes: 57 00 1c 01 74[0m
+[0;32mI (488064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (489274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (490234) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (490824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (490884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (490944) KMITL_DHT_HTTP: raw bytes: 57 00 1c 00 73[0m
+[0;32mI (490944) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (492164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (493184) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (493824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (493884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (493944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 09 7b[0m
+[0;32mI (493944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (495164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (496124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (496824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (496884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (496944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (497004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (497064) KMITL_DHT_HTTP: DHT checksum error try=5: got=229 expected=228[0m
+[0;33mW (497124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (497184) KMITL_DHT_HTTP: DHT checksum error try=7: got=229 expected=228[0m
+[0;33mW (497224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (499824) KMITL_DHT_HTTP: DHT checksum error try=1: got=231 expected=230[0m
+[0;33mW (499884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (499944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (500004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (500064) KMITL_DHT_HTTP: raw bytes: 56 00 1c 00 72[0m
+[0;32mI (500064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=86.0%[0m
+[0;32mI (501274) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (502234) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (502824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (502884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (502944) KMITL_DHT_HTTP: raw bytes: 56 00 1b 09 7a[0m
+[0;32mI (502944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=86.0%[0m
+[0;32mI (504164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (505134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (505824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (505884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (505944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (506004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (506064) KMITL_DHT_HTTP: DHT checksum error try=5: got=229 expected=228[0m
+[0;33mW (506124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (506184) KMITL_DHT_HTTP: DHT checksum error try=7: got=229 expected=228[0m
+[0;33mW (506224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (508824) KMITL_DHT_HTTP: DHT checksum error try=1: got=229 expected=228[0m
+[0;33mW (508884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (508944) KMITL_DHT_HTTP: DHT checksum error try=3: got=247 expected=246[0m
+[0;33mW (509004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (509064) KMITL_DHT_HTTP: DHT checksum error try=5: got=231 expected=230[0m
+[0;33mW (509124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (509184) KMITL_DHT_HTTP: raw bytes: 57 00 1c 00 73[0m
+[0;32mI (509184) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (510384) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (511334) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (511824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (511884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (511944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 09 7b[0m
+[0;32mI (511944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (513154) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (514114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (514824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (514884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (514944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 09 7b[0m
+[0;32mI (514944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (516144) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (517124) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (517824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (517884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (517944) KMITL_DHT_HTTP: DHT checksum error try=3: got=247 expected=246[0m
+[0;33mW (518004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (518064) KMITL_DHT_HTTP: raw bytes: 57 00 1c 00 73[0m
+[0;32mI (518064) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (519284) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (520214) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (520824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (520884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (520944) KMITL_DHT_HTTP: DHT checksum error try=3: got=249 expected=248[0m
+[0;33mW (521004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (521064) KMITL_DHT_HTTP: raw bytes: 58 00 1b 09 7c[0m
+[0;32mI (521064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;32mI (522284) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (523314) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (523824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (523884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (523944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (523944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (525164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (526114) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (526824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (526894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (526954) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (527014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (527074) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (527134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (527194) KMITL_DHT_HTTP: raw bytes: 57 00 1c 00 73[0m
+[0;32mI (527194) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (528404) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (529384) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (529824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (529884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (529944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (530004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (530064) KMITL_DHT_HTTP: raw bytes: 57 00 1b 09 7b[0m
+[0;32mI (530064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (531304) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (532374) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (532824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (532884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (532944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (532944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (534164) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (535164) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (535824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (535884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (535944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (536004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (536064) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (536124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (536184) KMITL_DHT_HTTP: DHT checksum error try=7: got=247 expected=246[0m
+[0;33mW (536224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (538824) KMITL_DHT_HTTP: DHT checksum error try=1: got=231 expected=230[0m
+[0;33mW (538884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (538944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (539004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (539064) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (539124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (539184) KMITL_DHT_HTTP: raw bytes: 57 00 1c 00 73[0m
+[0;32mI (539184) KMITL_DHT_HTTP: DHT OK  T=28.0°C  H=87.0%[0m
+[0;32mI (540404) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (541434) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (541824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (541884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (541944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (541944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (543174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (544174) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (544824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (544884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (544944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 08 7b[0m
+[0;32mI (544944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;32mI (546174) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (547174) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (547824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (547884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (547944) KMITL_DHT_HTTP: DHT checksum error try=3: got=247 expected=246[0m
+[0;33mW (548004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (548064) KMITL_DHT_HTTP: DHT checksum error try=5: got=249 expected=248[0m
+[0;33mW (548124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (548184) KMITL_DHT_HTTP: DHT checksum error try=7: got=249 expected=248[0m
+[0;33mW (548224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (550824) KMITL_DHT_HTTP: DHT checksum error try=1: got=249 expected=248[0m
+[0;33mW (550884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (550944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 08 7b[0m
+[0;32mI (550944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;32mI (552204) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (553384) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (553824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (553884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (553944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (553944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (555144) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (556134) KMITL_DHT_HTTP: HTTP POST -> status=201, len=-1[0m
+[0;33mW (556824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (556894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (556954) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (557014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (557074) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (557134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (557194) KMITL_DHT_HTTP: DHT checksum error try=7: got=247 expected=246[0m
+[0;33mW (557234) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (559824) KMITL_DHT_HTTP: DHT checksum error try=1: got=247 expected=246[0m
+[0;33mW (559884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (559944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (559944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;32mI (565804) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (570404) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (572914) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (572914) wifi:state: run -> init (0xc800)[0m
+[0;32mI (572924) wifi:pm stop, total sleep time: 0 us / 568302424 us[0m
+
+[0;32mI (572924) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (572924) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[1;31mE (572934) esp-tls-mbedtls: read error :-0x004C[0m
+[1;31mE (572934) transport_base: esp_tls_conn_read error, errno=Software caused connection abort[0m
+[0;33mW (572944) KMITL_DHT_HTTP: HTTP POST failed: ESP_ERR_HTTP_FETCH_HEADER[0m
+[0;33mW (572974) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (573034) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573094) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (573154) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573214) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (573274) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573334) KMITL_DHT_HTTP: DHT checksum error try=7: got=247 expected=246[0m
+[0;33mW (573374) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (573394) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573454) KMITL_DHT_HTTP: DHT checksum error try=2: got=249 expected=248[0m
+[0;33mW (573514) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573574) KMITL_DHT_HTTP: DHT checksum error try=4: got=249 expected=248[0m
+[0;33mW (573634) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573694) KMITL_DHT_HTTP: DHT checksum error try=6: got=249 expected=248[0m
+[0;33mW (573754) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573794) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (573814) KMITL_DHT_HTTP: DHT checksum error try=1: got=249 expected=248[0m
+[0;33mW (573874) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (573934) KMITL_DHT_HTTP: DHT checksum error try=3: got=249 expected=248[0m
+[0;33mW (573994) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (574054) KMITL_DHT_HTTP: DHT checksum error try=5: got=249 expected=248[0m
+[0;33mW (574114) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (574174) KMITL_DHT_HTTP: DHT checksum error try=7: got=249 expected=248[0m
+[0;33mW (574214) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (574234) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (574294) KMITL_DHT_HTTP: DHT checksum error try=2: got=249 expected=248[0m
+[0;33mW (574354) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (574414) KMITL_DHT_HTTP: raw bytes: 58 00 1b 09 7c[0m
+[0;32mI (574414) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (574414) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;32mI (574824) KMITL_DHT_HTTP: raw bytes: 58 00 1b 09 7c[0m
+[0;32mI (574824) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (574824) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (577824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (577884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (577944) KMITL_DHT_HTTP: DHT checksum error try=3: got=247 expected=246[0m
+[0;33mW (578004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (578064) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (578124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (578184) KMITL_DHT_HTTP: DHT checksum error try=7: got=249 expected=248[0m
+[0;33mW (578224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (580824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (580884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (580944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (581004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (581064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (581124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (581184) KMITL_DHT_HTTP: DHT checksum error try=7: got=247 expected=246[0m
+[0;33mW (581224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (583824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (583894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (583954) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (584014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (584074) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (584074) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (584074) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (586824) KMITL_DHT_HTTP: DHT checksum error try=1: got=247 expected=118[0m
+[0;33mW (586884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (586944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 07 79[0m
+[0;32mI (586944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (586944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (589824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (589884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (589944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 07 79[0m
+[0;32mI (589944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (589944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (592824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (592884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (592944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 07 79[0m
+[0;32mI (592944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (592944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (595824) KMITL_DHT_HTTP: DHT checksum error try=1: got=245 expected=116[0m
+[0;33mW (595884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (595944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (596004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (596064) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (596064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (596064) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (598824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (598884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (598944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (598944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (598944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (601824) KMITL_DHT_HTTP: DHT checksum error try=1: got=247 expected=118[0m
+[0;33mW (601884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (601954) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (602014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (602074) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (602134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (602194) KMITL_DHT_HTTP: DHT checksum error try=7: got=247 expected=246[0m
+[0;33mW (602234) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (604824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (604884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (604944) KMITL_DHT_HTTP: DHT checksum error try=3: got=245 expected=244[0m
+[0;33mW (605014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (605074) KMITL_DHT_HTTP: DHT checksum error try=5: got=247 expected=246[0m
+[0;33mW (605134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (605194) KMITL_DHT_HTTP: DHT checksum error try=7: got=247 expected=246[0m
+[0;33mW (605234) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (607824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (607884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (607944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (607944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (607944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (610824) KMITL_DHT_HTTP: DHT checksum error try=1: got=247 expected=118[0m
+[0;33mW (610884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (610944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (610944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (610944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (613824) KMITL_DHT_HTTP: DHT checksum error try=1: got=247 expected=118[0m
+[0;33mW (613884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (613944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 07 79[0m
+[0;32mI (613944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (613944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (616824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (616884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (616944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (617004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (617064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (617124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (617184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (617224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (619834) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (619894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (619954) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (620014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (620074) KMITL_DHT_HTTP: DHT checksum error try=5: got=243 expected=242[0m
+[0;33mW (620134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (620194) KMITL_DHT_HTTP: raw bytes: 57 00 1b 08 7a[0m
+[0;32mI (620194) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (620194) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (622824) KMITL_DHT_HTTP: DHT checksum error try=1: got=245 expected=116[0m
+[0;33mW (622884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (622944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (623004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (623064) KMITL_DHT_HTTP: raw bytes: 57 00 1b 07 79[0m
+[0;32mI (623064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (623064) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (625824) KMITL_DHT_HTTP: DHT checksum error try=1: got=245 expected=116[0m
+[0;33mW (625884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (625944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 07 79[0m
+[0;32mI (625944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (625944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (628824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (628884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (628944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 07 79[0m
+[0;32mI (628944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (628944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (631824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (631884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (631944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (631944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (631944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (634824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (634884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (634944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (634944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (634944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (637824) KMITL_DHT_HTTP: DHT checksum error try=1: got=245 expected=116[0m
+[0;33mW (637884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (637944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (637944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (637944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (640824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (640884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (640944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (641004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (641064) KMITL_DHT_HTTP: DHT checksum error try=5: got=243 expected=242[0m
+[0;33mW (641124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (641184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (641224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (643824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (643884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (643944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (643944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (643944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (646824) KMITL_DHT_HTTP: DHT checksum error try=1: got=243 expected=114[0m
+[0;33mW (646884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (646944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (646944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (646944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (649824) KMITL_DHT_HTTP: DHT checksum error try=1: got=243 expected=114[0m
+[0;33mW (649884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (649944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (649944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (649944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (652824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (652884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (652944) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=240[0m
+[0;33mW (653004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (653064) KMITL_DHT_HTTP: DHT checksum error try=5: got=243 expected=242[0m
+[0;33mW (653124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (653184) KMITL_DHT_HTTP: DHT checksum error try=7: got=243 expected=242[0m
+[0;33mW (653224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (655824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (655884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (655944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (656004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (656064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (656124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (656184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (656224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (658824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (658884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (658944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (658944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (658944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (661824) KMITL_DHT_HTTP: DHT checksum error try=1: got=245 expected=116[0m
+[0;33mW (661884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (661944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (661944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (661944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (664824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (664884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (664944) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (665004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (665064) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (665064) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (665064) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;32mI (667144) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (667144) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (667824) KMITL_DHT_HTTP: DHT checksum error try=1: got=245 expected=116[0m
+[0;33mW (667884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (667944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (667944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (667944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;32mI (670824) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (670824) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (670824) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;32mI (671154) wifi:state: auth -> init (0x200)[0m
+[0;32mI (671164) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (673824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (673884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (673944) KMITL_DHT_HTTP: DHT checksum error try=3: got=239 expected=238[0m
+[0;33mW (674004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (674064) KMITL_DHT_HTTP: DHT checksum error try=5: got=241 expected=240[0m
+[0;33mW (674134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (674194) KMITL_DHT_HTTP: DHT checksum error try=7: got=243 expected=242[0m
+[0;33mW (674234) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (676824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (676884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (676944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (676944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (676944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (679824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (679884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (679944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (679944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (679944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (682824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (682884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (682944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 05 78[0m
+[0;32mI (682944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (682944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (685824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (685884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (685944) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=240[0m
+[0;33mW (686004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (686064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (686124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (686184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (686224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (688824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (688884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (688944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (688944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (688944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (691824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (691884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (691944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 05 78[0m
+[0;32mI (691944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (691944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (694824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (694884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (694944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (694944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (694944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (697824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (697884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (697944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (697944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (697944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (700824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (700884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (700944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 05 77[0m
+[0;32mI (700944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (700944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (703824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (703884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (703944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 05 77[0m
+[0;32mI (703944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (703944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (706824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (706884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (706944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (706944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (706944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (709824) KMITL_DHT_HTTP: DHT: bit 38 low timeout[0m
+[0;33mW (709894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (709954) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=240[0m
+[0;33mW (710014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (710074) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (710144) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (710204) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (710244) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (712834) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (712894) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (712954) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=240[0m
+[0;33mW (713014) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (713074) KMITL_DHT_HTTP: DHT: bit 38 low timeout[0m
+[0;33mW (713134) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (713194) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (713234) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (715824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (715884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (715944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 05 78[0m
+[0;32mI (715944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (715944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (718824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (718884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (718944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (718944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (718944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (721824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (721884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (721944) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=112[0m
+[0;33mW (722004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (722064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (722124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (722184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (722224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (724824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (724884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (724944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (724944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (724944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (727824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (727884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (727944) KMITL_DHT_HTTP: DHT checksum error try=3: got=241 expected=240[0m
+[0;33mW (728004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (728064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (728124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (728184) KMITL_DHT_HTTP: raw bytes: 58 00 1b 07 7a[0m
+[0;32mI (728184) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (728184) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (730824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (730884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (730944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (730944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (730944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (733824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (733884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (733944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (733944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (733944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (736824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (736884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (736944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (736944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (736944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (739824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (739884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (739944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (739944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (739944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (742824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (742884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (742944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (742944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (742944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (745824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (745884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (745944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (745944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (745944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (748824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (748884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (748944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (749004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (749064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (749124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (749184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (749224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (751824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (751884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (751944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 05 78[0m
+[0;32mI (751944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (751944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (754824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (754884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (754944) KMITL_DHT_HTTP: raw bytes: 57 00 1b 06 78[0m
+[0;32mI (754944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=87.0%[0m
+[0;33mW (754944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (757824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (757884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;32mI (757944) KMITL_DHT_HTTP: raw bytes: 58 00 1b 06 79[0m
+[0;32mI (757944) KMITL_DHT_HTTP: DHT OK  T=27.0°C  H=88.0%[0m
+[0;33mW (757944) KMITL_DHT_HTTP: Skip HTTP: not connected[0m
+[0;33mW (760824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (760884) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (760944) KMITL_DHT_HTTP: DHT checksum error try=3: got=243 expected=242[0m
+[0;33mW (761004) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (761064) KMITL_DHT_HTTP: DHT checksum error try=5: got=245 expected=244[0m
+[0;33mW (761124) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (761184) KMITL_DHT_HTTP: DHT checksum error try=7: got=245 expected=244[0m
+[0;33mW (761224) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (763824) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (763884) KMITL_DHT_HTTP: DHT: no response (low)[0m

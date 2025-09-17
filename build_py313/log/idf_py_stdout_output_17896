@@ -1,0 +1,306 @@
+Command: C:\Espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Espressif\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\asus\esp_projects\kmitl_dht_http_fixed\build_py313\kmitl_dht_http.elf C:\Users\asus\esp_projects\kmitl_dht_http_fixed\build_py313\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Espressif\v5.5.1\esp-idf\tools\idf.py' '-B' 'build_py313' '-p' 'COM3'
+00,hd_drv:0������ST Offset   Length
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 0000ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 17 2025 22:29:04[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2fb1ch (195356) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=0003fb44 vaddr=3ffb0000 size=004d4h (  1236) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a13c4h (660420) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000e13ec vaddr=3ffb04d4 size=03a48h ( 14920) load[0m
+[0;32mI (389) esp_image: segment 4: paddr=000e4e3c vaddr=40080000 size=17eb8h ( 97976) load[0m
+[0;32mI (428) esp_image: segment 5: paddr=000fccfc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (458) cpu_start: Pro cpu start user code[0m
+[0;32mI (458) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (459) app_init: Application information:[0m
+[0;32mI (459) app_init: Project name:     kmitl_dht_http[0m
+[0;32mI (463) app_init: App version:      1[0m
+[0;32mI (466) app_init: Compile time:     Sep 17 2025 22:28:34[0m
+[0;32mI (472) app_init: ELF file SHA256:  ca2b72db1...[0m
+[0;32mI (476) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (480) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (483) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (487) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (492) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (498) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFB85E0 len 00027A20 (158 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 40097EB8 len 00008148 (32 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (528) spi_flash: flash io: dio[0m
+[0;33mW (531) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (584) wifi:wifi driver task: 3ffc05b0, prio:23, stack:6656, core=0[0m
+[0;32mI (594) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (594) wifi:wifi certification version: v7.0[0m
+[0;32mI (594) wifi:config NVS flash: enabled[0m
+[0;32mI (594) wifi:config nano formatting: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (604) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (604) wifi:Init management short buffer num: 32[0m
+[0;32mI (614) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (624) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (634) wifi_init: accept mbox: 6[0m
+[0;32mI (634) wifi_init: tcpip mbox: 32[0m
+[0;32mI (634) wifi_init: udp mbox: 6[0m
+[0;32mI (644) wifi_init: tcp mbox: 6[0m
+[0;32mI (644) wifi_init: tcp tx win: 5760[0m
+[0;32mI (644) wifi_init: tcp rx win: 5760[0m
+[0;32mI (654) wifi_init: tcp mss: 1440[0m
+[0;32mI (654) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (654) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (664) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (664) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (744) wifi:mode : sta (58:bf:25:8c:14:64)[0m
+[0;32mI (744) wifi:enable tsf[0m
+[0;32mI (3164) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3164) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4424) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4434) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4474) wifi:connected with riize, aid = 1, channel 6, BW20, bssid = 1a:84:68:57:b4:da[0m
+[0;32mI (4484) wifi:security: WPA3-SAE, phy: bgn, rssi: -39[0m
+[0;32mI (4484) wifi:pm start, type: 0[0m
+
+[0;32mI (4484) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4494) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5534) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5534) KMITL_DHT_HTTP: Got IP: 172.20.10.3[0m
+[0;32mI (5534) main_task: Returned from app_main()[0m
+[0;33mW (10554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (10954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (13554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (13954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (16554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (16614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (16674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (16734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (16794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (16854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (16914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (16954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (19554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (19614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (19674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (19734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (19794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (19854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (19914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (19954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (22554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (22614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (22674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (22734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (22794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (22854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (22914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (22954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (25554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (25614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (25674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (25734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (25794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (25854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (25914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (25954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (28554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (28614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (28674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (28734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (28794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (28854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (28914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (28954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (31554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (31614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (31674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (31734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (31794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (31854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (31914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (31954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (34554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (34604) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (34664) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (34724) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (34784) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (34844) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (34904) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (34944) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (37554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (37614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (37674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (37734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (37794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (37854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (37914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (37954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (40554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (40614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (40674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (40734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (40794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (40854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (40914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (40954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (43554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (43614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (43674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (43734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (43794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (43854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (43914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (43954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (46554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (46614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (46674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (46734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (46794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (46854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (46914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (46954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (49554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (49954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (52554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (52954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (55554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (55954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (58554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (58614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (58674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (58734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (58794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (58854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (58914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (58954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (61554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (61614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (61674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (61734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (61794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (61854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (61914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (61954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (64554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (64954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (67554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (67614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (67674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (67734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (67794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (67854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (67914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (67954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (70554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (70954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (73554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (73954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (76554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (76614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (76674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (76734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (76794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (76854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (76914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (76954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (79554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (79614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (79674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (79734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (79794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (79854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (79914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (79954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (82554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (82614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (82674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (82734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (82794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (82854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (82914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (82954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (85554) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (85614) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (85674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (85734) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (85794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (85854) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (85914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (85954) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m

@@ -1,0 +1,166 @@
+Command: C:\Espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Espressif\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\asus\esp_projects\kmitl_dht_http_fixed\build_py313\kmitl_dht_http.elf C:\Users\asus\esp_projects\kmitl_dht_http_fixed\build_py313\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Espressif\v5.5.1\esp-idf\tools\idf.py' '-B' 'build_py313' '-p' 'COM3'
+aiting for download
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 17 2025 22:29:04[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2fb1ch (195356) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=0003fb44 vaddr=3ffb0000 size=004d4h (  1236) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a138ch (660364) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000e13b4 vaddr=3ffb04d4 size=03a48h ( 14920) load[0m
+[0;32mI (389) esp_image: segment 4: paddr=000e4e04 vaddr=40080000 size=17eb8h ( 97976) load[0m
+[0;32mI (428) esp_image: segment 5: paddr=000fccc4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (440) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Multicore app[0m
+[0;32mI (459) cpu_start: Pro cpu start user code[0m
+[0;32mI (459) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (459) app_init: Application information:[0m
+[0;32mI (459) app_init: Project name:     kmitl_dht_http[0m
+[0;32mI (463) app_init: App version:      1[0m
+[0;32mI (467) app_init: Compile time:     Sep 17 2025 22:28:34[0m
+[0;32mI (472) app_init: ELF file SHA256:  80b2d49a5...[0m
+[0;32mI (476) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (480) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (484) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (488) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (492) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (498) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFB85E0 len 00027A20 (158 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 40097EB8 len 00008148 (32 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (528) spi_flash: flash io: dio[0m
+[0;33mW (531) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (584) wifi:wifi driver task: 3ffc05b0, prio:23, stack:6656, core=0[0m
+[0;32mI (594) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (594) wifi:wifi certification version: v7.0[0m
+[0;32mI (594) wifi:config NVS flash: enabled[0m
+[0;32mI (594) wifi:config nano formatting: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (604) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (604) wifi:Init management short buffer num: 32[0m
+[0;32mI (614) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (624) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (634) wifi_init: accept mbox: 6[0m
+[0;32mI (634) wifi_init: tcpip mbox: 32[0m
+[0;32mI (634) wifi_init: udp mbox: 6[0m
+[0;32mI (644) wifi_init: tcp mbox: 6[0m
+[0;32mI (644) wifi_init: tcp tx win: 5760[0m
+[0;32mI (644) wifi_init: tcp rx win: 5760[0m
+[0;32mI (654) wifi_init: tcp mss: 1440[0m
+[0;32mI (654) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (654) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (674) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (674) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (754) wifi:mode : sta (58:bf:25:8c:14:64)[0m
+[0;32mI (754) wifi:enable tsf[0m
+[0;32mI (3174) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3174) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4444) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4464) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4644) wifi:connected with riize, aid = 1, channel 6, BW20, bssid = 1a:84:68:57:b4:da[0m
+[0;32mI (4644) wifi:security: WPA3-SAE, phy: bgn, rssi: -44[0m
+[0;32mI (4664) wifi:pm start, type: 0[0m
+
+[0;32mI (4664) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4664) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6594) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (6594) KMITL_DHT_HTTP: Got IP: 172.20.10.3[0m
+[0;32mI (6594) main_task: Returned from app_main()[0m
+[0;33mW (11614) KMITL_DHT_HTTP: DHT: bit 39 low timeout[0m
+[0;33mW (11674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (11734) KMITL_DHT_HTTP: DHT checksum error try=3: got=1 expected=0[0m
+[0;33mW (11794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (11854) KMITL_DHT_HTTP: DHT checksum error try=5: got=1 expected=0[0m
+[0;33mW (11914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (11974) KMITL_DHT_HTTP: DHT checksum error try=7: got=1 expected=0[0m
+[0;33mW (12014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (14614) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=0[0m
+[0;33mW (14674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (14734) KMITL_DHT_HTTP: DHT checksum error try=3: got=1 expected=0[0m
+[0;33mW (14794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (14854) KMITL_DHT_HTTP: DHT checksum error try=5: got=1 expected=0[0m
+[0;33mW (14914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (14974) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=7)[0m
+[0;33mW (15014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (17614) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=0[0m
+[0;33mW (17674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (17734) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=3)[0m
+[0;33mW (17794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (17854) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=5)[0m
+[0;33mW (17914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (17974) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=7)[0m
+[0;33mW (18014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (20614) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=0[0m
+[0;33mW (20674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (20734) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=3)[0m
+[0;33mW (20794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (20854) KMITL_DHT_HTTP: DHT checksum error try=5: got=1 expected=0[0m
+[0;33mW (20914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (20974) KMITL_DHT_HTTP: DHT checksum error try=7: got=1 expected=0[0m
+[0;33mW (21014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (23614) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=0[0m
+[0;33mW (23674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (23734) KMITL_DHT_HTTP: DHT checksum error try=3: got=1 expected=0[0m
+[0;33mW (23794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (23854) KMITL_DHT_HTTP: DHT checksum error try=5: got=1 expected=0[0m
+[0;33mW (23914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (23974) KMITL_DHT_HTTP: DHT checksum error try=7: got=1 expected=0[0m
+[0;33mW (24014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (26614) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=0[0m
+[0;33mW (26674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (26734) KMITL_DHT_HTTP: DHT checksum error try=3: got=1 expected=0[0m
+[0;33mW (26794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (26854) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=5)[0m
+[0;33mW (26914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (26974) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=7)[0m
+[0;33mW (27014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (29614) KMITL_DHT_HTTP: DHT checksum error try=1: got=1 expected=0[0m
+[0;33mW (29674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (29734) KMITL_DHT_HTTP: DHT empty frame: 00 00 00 00 00 (try=3)[0m
+[0;33mW (29794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (29854) KMITL_DHT_HTTP: DHT checksum error try=5: got=1 expected=0[0m
+[0;33mW (29914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (29974) KMITL_DHT_HTTP: DHT checksum error try=7: got=1 expected=0[0m
+[0;33mW (30014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
+[0;33mW (32614) KMITL_DHT_HTTP: DHT: bit 32 low timeout[0m
+[0;33mW (32674) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (32734) KMITL_DHT_HTTP: DHT checksum error try=3: got=1 expected=0[0m
+[0;33mW (32794) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (32854) KMITL_DHT_HTTP: DHT checksum error try=5: got=1 expected=0[0m
+[0;33mW (32914) KMITL_DHT_HTTP: DHT: no response (low)[0m
+[0;33mW (32974) KMITL_DHT_HTTP: DHT checksum error try=7: got=1 expected=0[0m
+[0;33mW (33014) KMITL_DHT_HTTP: DHT read error: ESP_FAIL[0m
